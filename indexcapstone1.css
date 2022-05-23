@@ -1,0 +1,25 @@
+.navbar{
+    background-color: #000000;
+    font-family: "monospace", courier, Courier New;
+}
+/*.h1{
+    font-family: "monospace", courier, Courier New;
+    color: #000000;
+}*/
+#name{
+    font-family: "monospace", courier, Courier New;
+    color: #000000;
+    font-size: x-large;
+}
+#name2{
+    font-family: "monospace", courier, Courier New;
+    color: #000000;
+    font-size: 180%;
+}
+#projects{
+   background-color: #000000; 
+   padding: 15px;
+}
+/*.card-body{
+    background-color: #000000; 
+}*/
