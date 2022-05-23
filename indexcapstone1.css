@@ -7,12 +7,13 @@
     color: #000000;
 }*/
 #name{
+    /*font-family: "monospace", courier, Courier New;*/
     font-family: "monospace", courier, Courier New;
     color: #000000;
-    font-size: x-large;
+    font-size: large;
 }
 #name2{
-    font-family: "monospace", courier, Courier New;
+    font-family: "Trirong", serif;
     color: #000000;
     font-size: 180%;
 }
@@ -23,3 +24,11 @@
 /*.card-body{
     background-color: #000000; 
 }*/
+#name3{
+    font-family: "monospace", courier, Courier New;
+}
+#labels{
+    color: #FFFFFF;
+}
+
+
