@@ -1,4 +1,4 @@
-.navbar{
+/*.navbar{
     background-color: #000000;
     font-family: "monospace", courier, Courier New;
 }
@@ -6,6 +6,93 @@
     font-family: "monospace", courier, Courier New;
     color: #000000;
 }*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar{
+    background-color: #000000;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    /* padding on left n right */
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    /* links not so close together create gap */
+}
+.nav-branding{
+    font-size: 2rem;
+}
+.nav-link{
+    transition: 0.7s ease;
+}
+.nav-link:hover{
+  color:yellow;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width:768px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: ;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-item{
+        margin: 16px 0;
+        /* margin top n bottom */
+    }
+    .nav-menu.active{
+        left: 0;
+
+    }
+}
+
 #name{
     /*font-family: "monospace", courier, Courier New;*/
     font-family: "monospace", courier, Courier New;
@@ -21,6 +108,18 @@
    background-color: #000000; 
    padding: 15px;
 }
+#contactin{
+    font-family: "Trirong", serif;
+    color: #000000;
+}
+#1projects{
+   background-color: #ffffff; 
+   padding: 30px;
+}
+#message{
+    font-family: "monospace", courier, Courier New;
+    color: #000000;
+}
 /*.card-body{
     background-color: #000000; 
 }*/
@@ -28,7 +127,125 @@
     font-family: "monospace", courier, Courier New;
 }
 #labels{
-    color: #FFFFFF;
+    font-family: "monospace", courier, Courier New;
+    color: #000000;
 }
 
+.carousel .item {
+  height: 500px;
+}
 
+.item img{
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+}
+/* Color of the links BEFORE scroll */
+
+
+
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+// No media query for `xs` since this is the default in Bootstrap
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .container {
+       
+}
+}
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .container{
+        
+    }
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .container{
+       
+    }
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .container{
+        
+    }
+}
+
+.contact-wrap{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-in{
+    padding: 40px 30px;
+
+}
+.contact-in:nth-child(1)
+{
+    flex: 30%;
+
+}
+.contact-in:nth-child(2)
+{
+    flex: 45%;
+
+}
+.contact-in:nth-child(3)
+{
+    flex: 25%;
+
+}
+.contact-in iframe{
+    width: 120%;
+    height: 100%;
+}
+
+.footer{
+    background-color:#000000;
+    padding: 70px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h6{
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "monospace", courier, Courier New;
+    font-weight: 500;
+    position: relative;
+    text-align:;
+}
+/* .footer-col :hover{
+    color: #ffffff;
+    padding-left: 10px;
+} */
+
+.footer-col .social-links a{
+    
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+.footer-fixed{
+    align-items: center;
+}
